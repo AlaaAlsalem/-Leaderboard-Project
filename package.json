@@ -1,0 +1,32 @@
+{
+  "name": "-Leaderboard-Project",
+  "version": "1.0.0",
+  "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlaaAlsalem/-Leaderboard-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlaaAlsalem/-Leaderboard-Project/issues"
+  },
+  "homepage": "https://github.com/AlaaAlsalem/-Leaderboard-Project#readme",
+  "devDependencies": {
+    "css-loader": "^6.4.0",
+    "html-webpack-plugin": "^5.4.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.59.1",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.3.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
