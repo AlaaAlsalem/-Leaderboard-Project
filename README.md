@@ -37,9 +37,9 @@ GIT
 
 # 👤 Author
 
-GitHub: [@dammyShittu](https://github.com/AlaaAlsalem/)
+GitHub: [@Aladdin Alsalem](https://github.com/AlaaAlsalem/)
 
-LinkedIn: [Adedamola Shittu](https://www.linkedin.com/in/aladdin-alsalem-5a68ba1a0/)
+LinkedIn: [Aladdin Alsalem](https://www.linkedin.com/in/aladdin-alsalem-5a68ba1a0/)
 
 
 # Show your support
