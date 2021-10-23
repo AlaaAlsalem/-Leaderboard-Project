@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,10 +7,10 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Courgette', cursive;
   line-height: 1.5;
-  background-color: #f4f4f4;
-  color: #333;
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(143, 146, 150, 0.98) 0.1%, rgb(5, 6, 29) 99.8%);
+  color: #f4f4f4;
 }
 
 h1 {
@@ -20,15 +22,18 @@ h2 {
 }
 
 button {
-  padding: 6px 15px;
-  box-shadow: 3px 3px 2px 1px #333;
+  padding: 8px 22px;
   transition: 300ms ease-in-out;
   cursor: pointer;
+  border-radius: 25px;
+  outline: none;
+  border: 0;
+  font-size: 15px;
+  font-family: 'Courgette', cursive;
 }
 
 button:hover {
-  background-color: #333;
-  color: #eee;
+  background-color: rgba(68, 233, 203, 0.981);
   transform: scale(0.98);
 }
 
@@ -51,20 +56,31 @@ button:hover {
   margin: 0 auto;
 }
 
-.table {
+#table {
   margin: 40px 0;
   padding: 0;
   list-style: none;
-  border: 2px solid rgb(82, 76, 76);
+  border: 2px solid rgba(68, 233, 203, 0.981);
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 
-.table li {
+#table li {
   text-align: start;
-  padding: 8px 10px;
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  align-items: center;
+  padding: 0 25px;
 }
 
-.table li:nth-child(even) {
-  background-color: lightgray;
+#table li:nth-child(even) {
+  background-color: rgba(68, 233, 203, 0.981);
+  color: #000;
+}
+
+#table li:last-child {
+  border-bottom-right-radius: 50px;
 }
 
 #form-section h2 {
@@ -81,10 +97,40 @@ button:hover {
 
 input {
   padding: 7px 10px;
-  border-radius: 5px;
+  border-radius: 7px;
   outline: none;
-  border: 1px solid #333;
+  border: transparent;
   font-size: 17px;
+  font-family: 'Courgette', cursive;
+  transition: 300ms;
+}
+
+input:focus {
+  transform: scale(1.1);
+  border: 1px solid rgba(37, 145, 251, 0.98);
+  background-color: rgba(68, 233, 203, 0.981);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+#error-msg {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: italic;
+  display: none;
+  transition: display 300ms ease-in-out 400ms;
+  background-color: #f4f4f4;
+  padding: 2px;
+  color: red;
+  border-radius: 20px;
 }
 
 #form-section button {
@@ -94,7 +140,6 @@ input {
 
 @media all and (min-width: 768px) {
   h1 {
-    text-align: start;
     font-size: 50px;
   }
 
@@ -116,5 +161,37 @@ input {
 
   .recent-scores {
     gap: 20px;
+  }
+
+  #table li {
+    font-size: 18px;
+    height: 60px;
+  }
+
+  #error-msg {
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  button {
+    font-size: 19px;
+  }
+
+  h1 {
+    font-size: 75px;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  #table li {
+    font-size: 22px;
+  }
+
+  #error-msg {
+    width: 70%;
+    margin: 0 auto;
   }
 }
