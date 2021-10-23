@@ -9,7 +9,7 @@
 body {
   font-family: 'Courgette', cursive;
   line-height: 1.5;
-  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(234, 237, 240, 0.98) 0.1%, rgb(5, 6, 29) 99.8%);
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(143, 146, 150, 0.98) 0.1%, rgb(5, 6, 29) 99.8%);
   color: #f4f4f4;
 }
 
